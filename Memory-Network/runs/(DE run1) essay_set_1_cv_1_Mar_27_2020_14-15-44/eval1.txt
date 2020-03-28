@@ -1,0 +1,108 @@
+Training kappa score = 0.24096875444739718
+Testing kappa score = 0.11687904993616494
+Best Testing kappa score so far = 0.11687904993616494
+**********
+Training kappa score = 0.08758931660780866
+Testing kappa score = 0.12378289790803043
+Best Testing kappa score so far = 0.12378289790803043
+**********
+Training kappa score = 0.5320527125053112
+Testing kappa score = 0.48151861215238434
+Best Testing kappa score so far = 0.48151861215238434
+**********
+Training kappa score = 0.22842468067851596
+Testing kappa score = 0.07112927950945336
+Best Testing kappa score so far = 0.48151861215238434
+**********
+Training kappa score = 0.5942703736275663
+Testing kappa score = 0.5256474281229936
+Best Testing kappa score so far = 0.5256474281229936
+**********
+Training kappa score = 0.6757533587379208
+Testing kappa score = 0.5906229099882382
+Best Testing kappa score so far = 0.5906229099882382
+**********
+Training kappa score = 0.8012024145801148
+Testing kappa score = 0.7726410776172106
+Best Testing kappa score so far = 0.7726410776172106
+**********
+Training kappa score = 0.4563699440783785
+Testing kappa score = 0.5660324890505876
+Best Testing kappa score so far = 0.7726410776172106
+**********
+Training kappa score = 0.8255299161071011
+Testing kappa score = 0.7520125583641926
+Best Testing kappa score so far = 0.7726410776172106
+**********
+Training kappa score = 0.6516592508696707
+Testing kappa score = 0.5881916251014964
+Best Testing kappa score so far = 0.7726410776172106
+**********
+Training kappa score = 0.8567400162724609
+Testing kappa score = 0.7064186218705168
+Best Testing kappa score so far = 0.7726410776172106
+**********
+Training kappa score = 0.8873417228600541
+Testing kappa score = 0.7076719010739806
+Best Testing kappa score so far = 0.7726410776172106
+**********
+Training kappa score = 0.7713238197303852
+Testing kappa score = 0.6975693225693227
+Best Testing kappa score so far = 0.7726410776172106
+**********
+Training kappa score = 0.8145773048166918
+Testing kappa score = 0.7474483583146989
+Best Testing kappa score so far = 0.7726410776172106
+**********
+Training kappa score = 0.8750682723433733
+Testing kappa score = 0.7548850772657345
+Best Testing kappa score so far = 0.7726410776172106
+**********
+Training kappa score = 0.8957160857537787
+Testing kappa score = 0.8422093730979914
+Best Testing kappa score so far = 0.8422093730979914
+**********
+Training kappa score = 0.8539856118996583
+Testing kappa score = 0.7245513099685975
+Best Testing kappa score so far = 0.8422093730979914
+**********
+Training kappa score = 0.8394669279281343
+Testing kappa score = 0.7867393589712246
+Best Testing kappa score so far = 0.8422093730979914
+**********
+Training kappa score = 0.8071838969067647
+Testing kappa score = 0.7113586452036496
+Best Testing kappa score so far = 0.8422093730979914
+**********
+Training kappa score = 0.7401090624821249
+Testing kappa score = 0.6633326027615613
+Best Testing kappa score so far = 0.8422093730979914
+**********
+Training kappa score = 0.9109781421900652
+Testing kappa score = 0.8358574065425757
+Best Testing kappa score so far = 0.8422093730979914
+**********
+Training kappa score = 0.8459655446322569
+Testing kappa score = 0.6854018432739601
+Best Testing kappa score so far = 0.8422093730979914
+**********
+Training kappa score = 0.9115595275206463
+Testing kappa score = 0.704022132368589
+Best Testing kappa score so far = 0.8422093730979914
+**********
+Training kappa score = 0.9149546936140709
+Testing kappa score = 0.8115453583079482
+Best Testing kappa score so far = 0.8422093730979914
+**********
+Training kappa score = 0.9312998422291385
+Testing kappa score = 0.8201007825743678
+Best Testing kappa score so far = 0.8422093730979914
+**********
+Training kappa score = 0.9070825663789245
+Testing kappa score = 0.7218465006660519
+Best Testing kappa score so far = 0.8422093730979914
+**********
+Training kappa score = 0.9450735655123885
+Testing kappa score = 0.8014597100305749
+Best Testing kappa score so far = 0.8422093730979914
+**********
