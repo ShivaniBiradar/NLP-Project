@@ -31,6 +31,10 @@ tf.flags.DEFINE_boolean("gated_addressing", False, "Simple gated addressing")
 tf.flags.DEFINE_boolean("allow_soft_placement", True, "Allow device soft device placement")
 tf.flags.DEFINE_boolean("is_regression", False, "The output is regression or classification")
 tf.flags.DEFINE_boolean("log_device_placement", False, "Log placement of ops on devices")
+
+## new flag for deciding what dataset to use
+tf.flags.DEFINE_boolean("non_english_data", False, "Use non-English dataset")
+
 # hyper-parameters
 FLAGS = tf.flags.FLAGS
 
@@ -48,6 +52,9 @@ reader = 'bow' # gru may not work
 epochs = FLAGS.epochs
 num_samples = FLAGS.num_samples
 num_tokens = FLAGS.token_num
+
+non_english = FLAGS.non_english_data
+
 test_batch_size = batch_size
 random_state = 0
 if is_regression:
@@ -81,12 +88,15 @@ with open(out_dir+'/params.txt', 'w') as f:
         f.write("\n")
 
 # hyper-parameters end here
-##training_path = "training_data/ASAP/training_set_rel3.tsv"
-##essay_list, resolved_scores, essay_id = data_utils.load_training_data(training_path, essay_set_id)
 
-## for the german data, the essay_set_id can be 1, 2 or 10
-training_file = "training_data/ASAP-DE/germanAsap.txt"
-essay_list, resolved_scores, essay_id = data_utils.load_german_training_data(training_file, essay_set_id)
+if (non_english):
+    ## for the german data, the essay_set_id can be 1, 2 or 10
+    training_file = "training_data/ASAP-DE/germanAsap.txt"
+    essay_list, resolved_scores, essay_id = data_utils.load_german_training_data(training_file, essay_set_id)
+else:
+    training_path = "training_data/ASAP/training_set_rel3.tsv"
+    essay_list, resolved_scores, essay_id = data_utils.load_training_data(training_path, essay_set_id)
+
 
 max_score = max(resolved_scores)
 min_score = min(resolved_scores)
@@ -107,11 +117,13 @@ score_range = range(min_score, max_score+1)
 
 #word_idx, _ = data_utils.build_vocab(essay_list, vocab_limit)
 
-# load glove
-#word_indexes, word2vec = data_utils.load_glove(num_tokens, dimensionality=embedding_size)
+if (non_english):
+    ## load German glove embeddings
+    word_indexes, word2vec = data_utils.load_german_glove()
+else:
+    # load glove
+    word_indexes, word2vec = data_utils.load_glove(num_tokens, dimensionality=embedding_size)
 
-## load German glove embeddings
-word_indexes, word2vec = data_utils.load_german_glove()
 
 vocab_size = len(word_indexes) + 1
 # stat info on data set
