@@ -10,6 +10,15 @@ import os
 import sys
 import pandas as pd
 
+
+## how to run this script:
+## English data (essay sets 1-8)
+## python cv_train.py --essay_set_id <id>
+##
+## German data (essay sets 1, 2 or 10)
+## python cv_train.py --essay_set_id <id> --non_english_data
+
+
 print('start to load flags\n')
 
 # flags
@@ -67,7 +76,13 @@ orig_stdout = sys.stdout
 ## changed timestamp to have - instead of : since windows files cannot have : in them
 ##timestamp = time.strftime("%b_%d_%Y_%H:%M:%S", time.localtime())
 timestamp = time.strftime("%b_%d_%Y_%H-%M-%S", time.localtime())
-folder_name = 'essay_set_{}_cv_{}_{}'.format(essay_set_id, num_samples, timestamp)
+
+## change output folder name based on language used
+if (non_english):
+    folder_name = '(DE) essay_set_{}_cv_{}_{}'.format(essay_set_id, num_samples, timestamp)
+else:
+    folder_name = '(EN) essay_set_{}_cv_{}_{}'.format(essay_set_id, num_samples, timestamp)
+
 out_dir = os.path.abspath(os.path.join(os.path.curdir, "runs", folder_name))
 if not os.path.exists(out_dir):
     os.makedirs(out_dir)
@@ -89,6 +104,7 @@ with open(out_dir+'/params.txt', 'w') as f:
 
 # hyper-parameters end here
 
+## read dataset
 if (non_english):
     ## for the german data, the essay_set_id can be 1, 2 or 10
     training_file = "training_data/ASAP-DE/germanAsap.txt"
@@ -117,6 +133,7 @@ score_range = range(min_score, max_score+1)
 
 #word_idx, _ = data_utils.build_vocab(essay_list, vocab_limit)
 
+## read word embeddings
 if (non_english):
     ## load German glove embeddings
     word_indexes, word2vec = data_utils.load_german_glove()
@@ -137,6 +154,8 @@ with open(out_dir+'/params.txt', 'a') as f:
     f.write('max sentence size: {} \nmean sentence size: {}\n'.format(max_sent_size, mean_sent_size))
 
 print('The length of score range is {}'.format(len(score_range)))
+
+## convert essay to vector representation
 E = data_utils.vectorize_data(essay_list, word_indexes, max_sent_size)
 
 labeled_data = zip(E, resolved_scores, sent_size_list)
