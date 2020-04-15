@@ -1,0 +1,22 @@
+allow_soft_placement=True
+batch_size=15
+embedding_size=300
+epochs=200
+epsilon=0.1
+essay_set_id=5
+evaluation_interval=5
+feature_size=100
+gated_addressing=False
+hops=3
+is_regression=False
+keep_prob=0.9
+l2_lambda=0.3
+learning_rate=0.001
+log_device_placement=False
+max_grad_norm=10.0
+non_english_data=False
+num_samples=1
+token_num=42
+max_score is 4 	 min_score is 0 
+max sentence size: 452 
+mean sentence size: 129

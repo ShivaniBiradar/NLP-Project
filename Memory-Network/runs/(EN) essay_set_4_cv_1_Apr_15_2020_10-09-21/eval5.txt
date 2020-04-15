@@ -1,0 +1,148 @@
+Training kappa score = 0.5624091112230348
+Testing kappa score = 0.5717391023069857
+Best Testing kappa score so far = 0.5717391023069857
+**********
+Training kappa score = 0.6547942720707258
+Testing kappa score = 0.7089811210941763
+Best Testing kappa score so far = 0.7089811210941763
+**********
+Training kappa score = 0.4648156220677223
+Testing kappa score = 0.48769898697539793
+Best Testing kappa score so far = 0.7089811210941763
+**********
+Training kappa score = 0.6733302647835462
+Testing kappa score = 0.717596935242086
+Best Testing kappa score so far = 0.717596935242086
+**********
+Training kappa score = 0.6109222388131952
+Testing kappa score = 0.6236258089209896
+Best Testing kappa score so far = 0.717596935242086
+**********
+Training kappa score = 0.7444651103807582
+Testing kappa score = 0.7543456107148057
+Best Testing kappa score so far = 0.7543456107148057
+**********
+Training kappa score = 0.7606253471579337
+Testing kappa score = 0.7853684363338258
+Best Testing kappa score so far = 0.7853684363338258
+**********
+Training kappa score = 0.7562365903751382
+Testing kappa score = 0.78651769435744
+Best Testing kappa score so far = 0.78651769435744
+**********
+Training kappa score = 0.6975693856828566
+Testing kappa score = 0.7170540226108117
+Best Testing kappa score so far = 0.78651769435744
+**********
+Training kappa score = 0.7428721829170043
+Testing kappa score = 0.768122950315201
+Best Testing kappa score so far = 0.78651769435744
+**********
+Training kappa score = 0.6677772348818982
+Testing kappa score = 0.6701461377870563
+Best Testing kappa score so far = 0.78651769435744
+**********
+Training kappa score = 0.7121336843042881
+Testing kappa score = 0.70350752096703
+Best Testing kappa score so far = 0.78651769435744
+**********
+Training kappa score = 0.6933488891245827
+Testing kappa score = 0.7205589011051343
+Best Testing kappa score so far = 0.78651769435744
+**********
+Training kappa score = 0.7733159235396108
+Testing kappa score = 0.7931232695605523
+Best Testing kappa score so far = 0.7931232695605523
+**********
+Training kappa score = 0.6948566488978534
+Testing kappa score = 0.6988133740519951
+Best Testing kappa score so far = 0.7931232695605523
+**********
+Training kappa score = 0.7090083633489077
+Testing kappa score = 0.7054645357992428
+Best Testing kappa score so far = 0.7931232695605523
+**********
+Training kappa score = 0.7403163643932162
+Testing kappa score = 0.7676361797812609
+Best Testing kappa score so far = 0.7931232695605523
+**********
+Training kappa score = 0.789503236168481
+Testing kappa score = 0.7977110523245127
+Best Testing kappa score so far = 0.7977110523245127
+**********
+Training kappa score = 0.7444889806825201
+Testing kappa score = 0.7582569859135272
+Best Testing kappa score so far = 0.7977110523245127
+**********
+Training kappa score = 0.8049764725653306
+Testing kappa score = 0.8052265854052681
+Best Testing kappa score so far = 0.8052265854052681
+**********
+Training kappa score = 0.771603680343988
+Testing kappa score = 0.7994456357864574
+Best Testing kappa score so far = 0.8052265854052681
+**********
+Training kappa score = 0.7723139134188739
+Testing kappa score = 0.7695291064835053
+Best Testing kappa score so far = 0.8052265854052681
+**********
+Training kappa score = 0.7615621871922785
+Testing kappa score = 0.746964559969863
+Best Testing kappa score so far = 0.8052265854052681
+**********
+Training kappa score = 0.760030170488078
+Testing kappa score = 0.7577514114059717
+Best Testing kappa score so far = 0.8052265854052681
+**********
+Training kappa score = 0.7571806586495463
+Testing kappa score = 0.7471085757193363
+Best Testing kappa score so far = 0.8052265854052681
+**********
+Training kappa score = 0.8115600049514142
+Testing kappa score = 0.8369921994915107
+Best Testing kappa score so far = 0.8369921994915107
+**********
+Training kappa score = 0.8129153247176811
+Testing kappa score = 0.8352049525085141
+Best Testing kappa score so far = 0.8369921994915107
+**********
+Training kappa score = 0.7815852061030999
+Testing kappa score = 0.7636071880637477
+Best Testing kappa score so far = 0.8369921994915107
+**********
+Training kappa score = 0.7308770142977542
+Testing kappa score = 0.7285955086727204
+Best Testing kappa score so far = 0.8369921994915107
+**********
+Training kappa score = 0.7817371068200307
+Testing kappa score = 0.804288333778691
+Best Testing kappa score so far = 0.8369921994915107
+**********
+Training kappa score = 0.8048391817620084
+Testing kappa score = 0.8081248814331012
+Best Testing kappa score so far = 0.8369921994915107
+**********
+Training kappa score = 0.7855261971096991
+Testing kappa score = 0.7975104186527933
+Best Testing kappa score so far = 0.8369921994915107
+**********
+Training kappa score = 0.8154989439773448
+Testing kappa score = 0.818258190982918
+Best Testing kappa score so far = 0.8369921994915107
+**********
+Training kappa score = 0.8159024196920075
+Testing kappa score = 0.8220204115565197
+Best Testing kappa score so far = 0.8369921994915107
+**********
+Training kappa score = 0.807256557027739
+Testing kappa score = 0.8277681835315982
+Best Testing kappa score so far = 0.8369921994915107
+**********
+Training kappa score = 0.7867925756611307
+Testing kappa score = 0.7879895890559003
+Best Testing kappa score so far = 0.8369921994915107
+**********
+Training kappa score = 0.7677194961458921
+Testing kappa score = 0.7892229830306638
+Best Testing kappa score so far = 0.8369921994915107
+**********
