@@ -1,0 +1,92 @@
+Training kappa score = 0.08485647249112582
+Testing kappa score = -0.0570923699909176
+Best Testing kappa score so far = 0.0
+**********
+Training kappa score = 0.005198890116425936
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.0
+**********
+Training kappa score = 0.0
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.0
+**********
+Training kappa score = -0.03629161088788435
+Testing kappa score = -0.007801900997423061
+Best Testing kappa score so far = 0.0
+**********
+Training kappa score = 0.0
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.0
+**********
+Training kappa score = 0.0
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.0
+**********
+Training kappa score = 0.0
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.0
+**********
+Training kappa score = 0.0
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.0
+**********
+Training kappa score = 0.0
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.0
+**********
+Training kappa score = 0.2541720663101158
+Testing kappa score = 0.28715931838920294
+Best Testing kappa score so far = 0.28715931838920294
+**********
+Training kappa score = 0.0
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.28715931838920294
+**********
+Training kappa score = 0.31997357194641673
+Testing kappa score = 0.29701745673297664
+Best Testing kappa score so far = 0.29701745673297664
+**********
+Training kappa score = 0.0
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.29701745673297664
+**********
+Training kappa score = 0.0
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.29701745673297664
+**********
+Training kappa score = 0.0
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.29701745673297664
+**********
+Training kappa score = 0.0
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.29701745673297664
+**********
+Training kappa score = 0.0
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.29701745673297664
+**********
+Training kappa score = 0.0
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.29701745673297664
+**********
+Training kappa score = 0.0
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.29701745673297664
+**********
+Training kappa score = 0.0
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.29701745673297664
+**********
+Training kappa score = 0.0
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.29701745673297664
+**********
+Training kappa score = 0.0
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.29701745673297664
+**********
+Training kappa score = 0.0
+Testing kappa score = 0.0
+Best Testing kappa score so far = 0.29701745673297664
+**********
