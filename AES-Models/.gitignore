@@ -1,8 +1,8 @@
 .idea/
 
-# glove files are way too large (over 4GB)
-word_embeddings/
-
+# don't include English and German Glove files
+word_embeddings/glove.42B.300d.txt
+word_embeddings/german_glove.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

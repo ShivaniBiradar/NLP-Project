@@ -49,7 +49,7 @@ def load_german_training_data(training_path, essay_set=1):
     return essay_list, resolved_score.tolist(), essay_ids.tolist()
 
 
-def load_glove(token_num=6, dimensionality=50):
+def load_glove(token_num=6, dimensionality=50, index_only=False):
     word2vec = []
     word_indexes = {}
     # first word is nil
@@ -71,9 +71,14 @@ def load_glove(token_num=6, dimensionality=50):
         for line in f:
             l = line.split()
             word = l[0]
-            vector = list(map(float, l[1:]))
+
+            ## return word vectors
+            if (not index_only):
+                vector = list(map(float, l[1:]))
+                word2vec.append(vector)
+
             word_indexes[word] = count
-            word2vec.append(vector)
+
             count += 1
 
     print("==> glove is loaded")
@@ -83,7 +88,7 @@ def load_glove(token_num=6, dimensionality=50):
 
 
 ## load German Glove embeddings, arguments are not needed since only one embedding file will be loaded
-def load_german_glove():
+def load_german_glove(index_only=False):
     ## number of vector components per word
     dimensionality = 300
 
@@ -99,10 +104,13 @@ def load_german_glove():
         for line in f:
             line = line.split()
             word = line[0]
-            vector = list(map(float, line[1:]))
+
+            ## return word vectors
+            if (not index_only):
+                vector = list(map(float, line[1:]))
+                word2vec.append(vector)
 
             word_indexes[word] = count
-            word2vec.append(vector)
 
             count += 1
 
@@ -193,5 +201,43 @@ def vectorize_data(data, word_indexes, sentence_size):
 
         word_list += [0] * length
         vector_data.append(word_list)
+
+    return vector_data
+
+
+## take in all essays and convert them to vector representations and add additional features
+def featurize_data(data, word_indexes, sentence_size):
+    vector_data = []
+
+    sentence_end = [".", "?", "!"]
+
+    for essay in data:
+        length = max(0, sentence_size - len(essay))
+        word_list = []
+
+        sentence_count = 0
+        unique_words = []
+
+        for word in essay:
+            if word in word_indexes:
+                word_list.append(word_indexes[word])
+            else:
+                if word in sentence_end:
+                    sentence_count += 1
+
+                word_list.append(0)
+
+            if (word not in unique_words):
+                unique_words.append(word)
+
+        # there must be at least one sentence
+        if (sentence_count == 0):
+            sentence_count = 1
+
+        # feature list for essay length, sentence count, and number of unique words
+        feature_list = [len(essay), sentence_count, len(unique_words)]
+
+        # only return the feature list
+        vector_data.append(feature_list)
 
     return vector_data
