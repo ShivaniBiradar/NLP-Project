@@ -1,8 +1,31 @@
 # NLP-Project
-Scripts that have been modified are: cv_train.py, data_utils.py, and memn2n_kv.py
+Scripts that have been modified from the base are: cv_train.py and data_utils.py.
+
+Memory network model is run using cv_train.py and the linear regression model is run using linear_regression.py.
+Code requires version 1.13.1 of TensorFlow, not latest available version.
+
+### How to run Memory Network
+for English data (essay sets 1-8):
+```
+python cv_train.py --essay_set_id <id>
+```
+for German data (essay sets 1, 2, 10):
+```
+python cv_train.py --essay_set_id <id> --non_english_data
+```
+
+### How to run Linear Regression
+for English data (essay sets 1-8):
+```
+python linear_regression.py --essay_set_id <id>
+```
+for German data (essay sets 1, 2, 10):
+```
+python linear_regression.py --essay_set_id <id> --non_english_data
+```
 
 
-Below is the original README
+Below is the original README for the base Memory Network:
 
 # Automated Essay Grading
 Source code for the paper [A Memory-Augmented Neural Model for Automated Grading](http://dl.acm.org/citation.cfm?doid=3051457.3053982) in L@S 2017.
